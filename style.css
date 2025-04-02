@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(67, 87, 100);
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.body__img-container {
+  background-image: url(https://images.unsplash.com/photo-1631264508765-b49496f3f45d?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nav__links {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav__btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 121, 129, 0.384);
+  border-radius: 20px;
+}
+
+.nav__btn:hover {
+  scale: 1.1;
+  background-color: rgba(1, 177, 162, 0.582);
+  transition: all 1s ease;
+}
+
+.nav__btn:active {
+  scale: 0.9;
+  transition: all 0.2s ease;
+}
+
+/* main */
+
+#main__hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(63, 93, 119);
+}
+
+#main__hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#main__hero p {
+  font-size: 1.3rem;
+}
+
+#main__hero p:first-of-type {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* products grid */
+
+#main__products {
+  height: 90vh;
+  width: 1200px;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 4%;
+  row-gap: 8%;
+}
+
+.main__item {
+  outline: 1px dashed magenta;
+  border-radius: 20px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main__item:hover {
+  scale: 1.04;
+  transition: all 0.3s ease;
+}
+
+#coffee1 {
+  background-image: url(/imgsrc/coffee1.avif);
+}
+
+#coffee2 {
+  background-image: url(/imgsrc/coffee2.avif);
+}
+
+#coffee3 {
+  background-image: url(/imgsrc/coffee3.avif);
+}
+
+#tea1 {
+  background-image: url(imgsrc/tea1.avif);
+}
+
+#tea2 {
+  background-image: url(imgsrc/tea2.avif);
+}
+
+#tea3 {
+  background-image: url(imgsrc/tea3.jpg);
+}
