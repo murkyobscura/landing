@@ -19,13 +19,14 @@ button {
 
 body {
   height: 100vh;
+  min-width: 100%;
   background-color: #d4e2e5;
 }
 
 .body__img-container {
   background-image: url(https://images.unsplash.com/photo-1631264508765-b49496f3f45d?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh + 70px);
 }
 
 /* navbar */
@@ -34,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 67%;
   height: 70px;
   margin: 0 auto;
 }
@@ -76,7 +77,7 @@ nav {
 /* main */
 
 #main__hero {
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,9 +166,87 @@ footer {
   margin: 0 auto;
   margin-top: 5rem;
   background-color: #273132;
+  height: 70vh;
+}
+
+.footer__contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  color: #d4e2e5;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer__contacts-block {
-  width: 1200px;
-  height: 60vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 2rem;
+}
+
+.footer__contacts-block a {
+  color: #d4e2e5;
+}
+
+.footer__contacts-block a:hover {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+
+.footer__separator {
+  width: 0.2rem;
+  border-radius: 60%;
+  height: 30vh;
+  align-self: center;
+  background-color: #767e80;
+}
+
+.footer__map {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__map iframe {
+  border-radius: 20px;
+}
+
+/* responsive design */
+
+@media (max-width: 992px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .nav__links {
+    width: 70vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
 }
