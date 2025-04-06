@@ -110,9 +110,7 @@ nav {
 }
 
 .main__products-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 5rem;
   font-size: 2.5rem;
   color: rgb(63, 93, 119);
@@ -168,13 +166,10 @@ footer {
   margin: 0 auto;
   margin-top: 5rem;
   background-color: #273132;
-  height: 70vh;
 }
 
 .footer__contact-us {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  text-align: center;
   margin-bottom: 5rem;
   padding-top: 5rem;
   font-size: 2.5rem;
@@ -186,6 +181,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 5rem;
 }
 
 .footer__contacts-block {
