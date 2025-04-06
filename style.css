@@ -82,7 +82,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(63, 93, 119);
+  color: rgb(40 54 65);
 }
 
 #main__hero h1 {
@@ -92,18 +92,20 @@ nav {
 
 #main__hero p {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #main__hero p:first-of-type {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 /* products grid */
 
 #main__products {
   height: 100vh;
-  width: 1200px;
+  min-width: 100%;
   margin: 5rem auto;
 }
 
@@ -246,6 +248,8 @@ footer {
   .nav__btn {
     display: none;
   }
+
+  
 }
 
 @media (max-width: 576px) {
