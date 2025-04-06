@@ -105,7 +105,7 @@ nav {
 
 #main__products {
   height: 100vh;
-  min-width: 100%;
+  width: 90%;
   margin: 5rem auto;
 }
 
@@ -210,8 +210,17 @@ footer {
 
 .footer__separator {
   width: 0.2rem;
-  border-radius: 60%;
   height: 30vh;
+  border-radius: 60%;
+  align-self: center;
+  background-color: #767e80;
+}
+
+.footer__separator__mobile {
+  display: none;
+  width: 50vh;
+  height: 0.2rem;
+  border-radius: 60%;
   align-self: center;
   background-color: #767e80;
 }
@@ -225,6 +234,8 @@ footer {
 
 .footer__map iframe {
   border-radius: 20px;
+  width: 500px;
+  height: 400px;
 }
 
 /* responsive design */
@@ -242,14 +253,41 @@ footer {
   .nav__links {
     width: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .nav__btn {
     display: none;
   }
 
-  
+  .main__products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  footer {
+    height: 100vh;
+  }
+
+  .footer__contact-us {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer__separator {
+    display: none;
+  }
+
+  .footer__separator__mobile {
+    display: block;
+  }
+
+  .footer__info {
+    height: calc(100vh - 14rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 576px) {
