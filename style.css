@@ -19,6 +19,7 @@ button {
 
 body {
   height: 100vh;
+  background-color: #d4e2e5;
 }
 
 .body__img-container {
@@ -47,6 +48,10 @@ nav {
   font-size: 1.2rem;
   display: flex;
   gap: 3rem;
+}
+
+.nav__links a {
+  cursor: pointer;
 }
 
 .nav__btn {
@@ -96,9 +101,22 @@ nav {
 /* products grid */
 
 #main__products {
-  height: 90vh;
+  height: 100vh;
   width: 1200px;
   margin: 5rem auto;
+}
+
+.main__products-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  color: rgb(63, 93, 119);
+}
+
+.main__products-grid {
+  height: 85vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -107,7 +125,6 @@ nav {
 }
 
 .main__item {
-  outline: 1px dashed magenta;
   border-radius: 20px;
   background-position: center center;
   background-size: cover;
@@ -140,4 +157,17 @@ nav {
 
 #tea3 {
   background-image: url(imgsrc/tea3.jpg);
+}
+
+/* footer */
+
+footer {
+  margin: 0 auto;
+  margin-top: 5rem;
+  background-color: #273132;
+}
+
+.footer__contacts-block {
+  width: 1200px;
+  height: 60vh;
 }
