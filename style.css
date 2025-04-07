@@ -88,6 +88,7 @@ nav {
 #main__hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 #main__hero p {
@@ -164,7 +165,7 @@ nav {
 /* footer */
 
 footer {
-  height: fit-content;
+  height: 100vh;
   margin-top: 5rem;
   background-color: #273132;
   padding-bottom: 5rem;
@@ -290,14 +291,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 2rem;
   }
 
   .footer__map {
     background: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2016/09/thumbnail-1.png);
     background-color: rgba(0, 0, 0, 0.473);
     background-blend-mode: darken;
-    height: 33%;
-    width: 67%;
+    min-height: 30%;
+    width: 70%;
     border-radius: 20px;
   }
 
@@ -321,5 +323,60 @@ footer {
   }
 }
 
-@media (max-width: 610px) {
+@media (max-width: 420px) {
+  .nav__logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  #main__hero h1 {
+    font-size: 2.1rem;
+  }
+
+  #main__hero p:first-of-type {
+    font-size: 1rem;
+  }
+
+  #main__hero p {
+    font-size: 1rem;
+  }
+
+  #main__products {
+    height: 100vh;
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .main__products-title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: rgb(63, 93, 119);
+  }
+
+  footer {
+    height: 120vh;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .footer__contact-us {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+
+  .footer__info {
+    height: calc(120vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .footer__contacts-block {
+    font-size: 1.2rem;
+  }
 }
